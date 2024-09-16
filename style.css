@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style-type: none;
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+    background-color: #38bdf8;
+    color: white;
+    border-radius: 10px;
+    width: 80px;
+    height: 30px;
+    border: none;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 360px)) minmax(200px, 1200px);
+    grid-template-rows: repeat(5, minmax(100px, 150px));
+}
+
+.header{
+    display: grid;
+    grid-template-rows: repeat(2, minmax(20px, 50px));
+    
+}
+
+.searchbar-profile{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.searchbar{
+    background-color: rgb(231, 231, 231);
+    width: 500px;
+    height: 30px;
+    border-radius: 10px;
+    display: grid;
+    justify-self: end;
+}
+
+.profile{
+    display: grid;
+    justify-self: end;
+    margin-right: 10px;
+}
+
+.main-profile-menu{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.main-profile{
+    display: grid;
+    justify-self: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.header-menu{
+    display: grid;
+    justify-self: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+
+.sidebar{
+    background-color: #38bdf8;
+    color: white;
+    grid-row: 1 / -1;
+    display: grid;
+    grid-template-rows: repeat(1, 100px) repeat(2, 250px);
+}
+
+.logo{
+    font-size: 40px;
+    margin-left: 40px;
+    margin-top: 20px;  
+    cursor: pointer;  
+}
+
+.sidebar-menu{
+    font-size: 20px;
+    display: grid;
+    grid-template-rows: repeat(6, 40px)
+}
+
+.sidebar-menu-settings{
+    font-size: 20px;
+    display: grid;
+    grid-template-rows: repeat(3, 40px);
+    align-self: end;
+}
+
+.main{
+    background-color: #bae6fd;
+    grid-row: 2 / -1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+    /* grid-template-rows: repeat(2, 1fr); */
+    gap: 20px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 300px;
+    background-color: white;
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.card-text{
+    margin-left: 10px;
+    margin-right: 10px;
+}

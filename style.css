@@ -30,6 +30,12 @@ button{
     
 }
 
+.searchbar-container{
+    display: flex;
+    margin-left: 10px;
+    gap: 10px;
+}
+
 .searchbar-profile{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -45,10 +51,24 @@ button{
     justify-self: end;
 }
 
+.search-icon{
+    height: 15px;
+    margin-top: 8px;
+}
+
 .profile{
     display: grid;
     justify-self: end;
     margin-right: 10px;
+}
+
+.profile-bell-icon{
+    height: 15px;
+}
+
+.profile-icon-container {
+    display: flex;
+    gap: 10px;
 }
 
 .main-profile-menu{
@@ -62,6 +82,15 @@ button{
     justify-self: center;
     cursor: pointer;
     font-weight: bold;
+}
+
+.main-profile-icon{
+    display: flex;
+    gap: 10px;
+}
+
+.user-icon{
+    height: 15px;
 }
 
 .header-menu{
